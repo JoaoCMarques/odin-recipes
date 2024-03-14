@@ -1,16 +1,39 @@
-ul , li {
-    list-style: none;
-    font-size: 20px;
+.recipes {
+    display: flex;
+    align-content: center;
+    gap: 10px;
+    
 }
 
+.boxContainer {
+    display: flex;
+    
+}
 
-.list a:link , a:visited{
+.box{
+    width: 200px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1.5px solid black;
+    border-radius: 1%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+a:link , a:visited{
     text-decoration: none;
     color: black;
 }
 
-.list a:hover {
-    color: salmon;
-    font-weight: bold;
+a:hover{
+    cursor: pointer;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(62, 158, 158, 0.19);
+
+
 }
 
+.headerBox {
+    align-items: start;
+}
